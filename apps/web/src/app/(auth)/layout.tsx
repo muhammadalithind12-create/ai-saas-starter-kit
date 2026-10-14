@@ -14,7 +14,7 @@ export default function AuthLayout({
         className="mb-8 flex items-center gap-2.5 font-semibold text-[15px] tracking-tight"
       >
         <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-foreground font-display text-[13px] font-bold text-background">
-          B2
+          CP
         </div>
         <span>{APP_NAME}</span>
       </Link>

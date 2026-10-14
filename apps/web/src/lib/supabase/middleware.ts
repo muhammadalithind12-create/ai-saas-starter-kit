@@ -3,7 +3,8 @@ import { NextResponse, type NextRequest } from "next/server";
 import { safeNextPath } from "@/lib/safe-redirect";
 
 // Paths that never require a session. Everything else is protected.
-const PUBLIC_PATHS = ["/signin", "/signup", "/auth"];
+// /studio is the public Content Studio demo — no login required.
+const PUBLIC_PATHS = ["/signin", "/signup", "/auth", "/studio"];
 
 function isPublic(pathname: string): boolean {
   return PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(p + "/"));

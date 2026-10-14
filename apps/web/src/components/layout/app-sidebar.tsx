@@ -124,7 +124,7 @@ export function AppSidebar() {
           className="flex items-center gap-2.5 font-semibold text-[15px] tracking-tight"
         >
           <div className="flex items-center justify-center w-7 h-7 rounded-lg bg-foreground text-background font-display font-bold text-[13px]">
-            B2
+            CP
           </div>
           <span>{APP_NAME}</span>
         </Link>
@@ -162,15 +162,10 @@ export function AppSidebar() {
             </button>
           </div>
         )}
-        <a
-          href="https://www.backblaze.com/cloud-storage?utm_source=github&utm_medium=referral&utm_campaign=ai_artifacts&utm_content=b2ai-ai-saas-starter-kit"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--brand-b2)]" />
-          Built on Backblaze B2
-        </a>
+        <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary" />
+          ContentPilot Studio
+        </span>
       </SidebarFooter>
     </Sidebar>
   );
